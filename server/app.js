@@ -8,6 +8,7 @@ const axios = require("axios")
 const path = require("path")
 const kotakHytam = require("../pages/fitures/blackbox.js")
 const tiktod = require("../pages/fitures/tiktok.js")
+const ambatron = require("../pages/fitures/ambatron.js")
 const mediapire = require("../pages/fitures/mediafire.js")
 const igedl = require("../pages/fitures/instagram.js")
 const { limit, checkBanned } = require("../declaration/rateLimit.jsx")
@@ -22,6 +23,9 @@ app.get("/", limit, (req, res) => {
 /** example ajg **/
 app.get("/blekbok", limit, async (req, res) => {
   kotakHytam(req, res)
+})
+app.get("/ambatron", limit, async (req, res) => {
+  ambatron(req, res)
 })
 app.get("/tiktokDL", limit, async (req, res) => {
   tiktod(req, res)
