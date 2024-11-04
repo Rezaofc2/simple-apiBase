@@ -21,19 +21,19 @@ app.get("/", limit, (req, res) => {
 })
 
 /** example ajg **/
-app.get("/blekbok", limit, async (req, res) => {
+app.get("/ai/blekbok", limit, async (req, res) => {
   kotakHytam(req, res)
 })
-app.get("/ambatron", limit, async (req, res) => {
+app.get("/ai/ambatron", limit, async (req, res) => {
   ambatron(req, res)
 })
-app.get("/tiktokDL", limit, async (req, res) => {
+app.get("/downloader/tiktokDL", limit, async (req, res) => {
   tiktod(req, res)
 })
-app.get("/instagramDL", limit, async (req, res) => {
+app.get("/downloader/instagramDL", limit, async (req, res) => {
   igedl(req, res)
 })
-app.get("/mediafireDL", limit, async (req, res) => {
+app.get("/downloader/mediafireDL", limit, async (req, res) => {
   mediapire(req, res)
 })
 
