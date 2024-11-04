@@ -11,6 +11,7 @@ const kotakHytam = require("../pages/fitures/blackbox.js");
 const tiktod = require("../pages/fitures/tiktok.js");
 const mediapire = require("../pages/fitures/mediafire.js");
 const igedl = require("../pages/fitures/instagram.js");
+const yete = require("../pages/fitures/youtube.js");
 const { limit, checkBanned } = require("../declaration/rateLimit.jsx");
 
 const app = express();
@@ -35,6 +36,9 @@ app.get("/downloader/instagramDL", limit, (req, res) => {
 });
 app.get("/downloader/mediafireDL", limit, (req, res) => {
   mediapire(req, res);
+});
+app.get("/downloader/youtube", limit, (req, res) => {
+  yete(req, res);
 });
 
 module.exports = app;
