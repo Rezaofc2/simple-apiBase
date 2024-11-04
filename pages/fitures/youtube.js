@@ -1,4 +1,5 @@
 const axios = require("axios")
+require('dotenv').config()
 const allowedApiKeys = require("../../declaration/arrayKey.jsx")
 
 module.exports = async (req, res) => {
