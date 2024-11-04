@@ -29,6 +29,8 @@ module.exports = async (req, res) => {
     const data = response.data.result[0]
 
     res.status(200).json({
+      status: true,
+      creator: "krizz",
       data: data
     })
   } catch (error) {
