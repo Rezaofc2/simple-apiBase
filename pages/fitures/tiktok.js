@@ -27,10 +27,11 @@ module.exports = async (req, res) => {
   try {
     const response = await axios.get(url)
     const data = response.data.data
-    const videoUrlNoWatermark = data.data.find(item => item.type === "nowatermark").url
 
     res.status(200).json({
-      data: videoUrlNoWatermark
+      status: true,
+      creator: "krizz",
+      data: data
     })
   } catch (error) {
     res.status(500).json({
