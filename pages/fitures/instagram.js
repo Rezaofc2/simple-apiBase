@@ -24,9 +24,11 @@ module.exports = async (req, res) => {
 
   try {
     const response = await axios.get(url)
-    const videoUrl = response.data.data.url_list[0]
+    const videoUrl = response.data.data
     res.status(200).json({
-      videoUrl
+      status: true,
+      creator: "krizz",
+      data: videoUrl
     })
   } catch (e) {
     res.status(500).json({
