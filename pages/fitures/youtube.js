@@ -4,6 +4,7 @@ const allowedApiKeys = require("../../declaration/arrayKey.jsx")
 
 module.exports = async (req, res) => {
   let urls = req.query.urls
+  let apiKey = req.query.apiKey
   if (!urls) {
     return res.status(400).json({
       error: "Url yt Nya Mana?"
