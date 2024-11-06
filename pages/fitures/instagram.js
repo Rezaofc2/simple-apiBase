@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
     const videoUrl = response.data.data
     res.status(200).json({
       status: true,
-      creator: "krizz",
+      creator: "RezaOffc",
       data: videoUrl
     })
   } catch (e) {
