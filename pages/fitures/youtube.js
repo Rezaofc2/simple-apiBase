@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
     })
   }
 
-  let url = `https://api.betabotz.eu.org/api/download/ytmp3?url=${urls}&apikey=${process.env.btz}`
+  let url = `https://api.betabotz.eu.org/api/download/ytmp3?url=${urls}&apikey=krizz`
 
   try {
     const response = await axios.get(url)
