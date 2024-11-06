@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
     const response = await ambatronAi(q)
     res.status(200).json({
       status: true,
-      creator: "krizz",
+      creator: "RezaOffc",
       data: response
     })
   } catch (error) {
