@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
 
     res.status(200).json({
       status: true,
-      creator: "krizz",
+      creator: "RezaOffc",
       data: data
     })
   } catch (error) {
